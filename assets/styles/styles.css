@@ -4,4 +4,74 @@
 
 body{
     background-image: none;
+    margin: 0px;
+}
+
+
+/*Begin of the navigation header bar*/
+header#bar {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(178, 29, 29);
+    background-image: linear-gradient(
+        135deg,
+        rgb(180, 0, 0) 35%,
+        rgb(236, 236, 236) 50%,
+        black 65%
+    );
+}
+
+nav#menu{
+    position: sticky;
+    width: 100%;
+}
+
+ul#Summary{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    align-items: center;
+    list-style-type:none;
+    width: 100%;
+    padding: 0px;
+}
+
+ul#Summary li{
+    width: inherit;
+    height: inherit;
+}
+
+ul#Summary li a{ 
+    text-decoration: none;
+    text-align: center;
+    color: #002CC7;
+}
+
+#Logo_summary{
+    object-fit: contain;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width:40%
+}
+
+#Logo_summary:hover{
+    border-radius: 35%;
+}
+
+p#Placeholder_summary{
+    visibility: hidden;
+    display: inline-block;
+    height: 60%;
+    width: 100%;
+    font-size: 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*End of the navigation header bar*/
+
+.center_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
