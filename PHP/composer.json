@@ -1,5 +1,6 @@
 {
     "require": {
-        "twbs/bootstrap": "^5.3"
+        "twbs/bootstrap": "^5.3",
+        "twig/twig": "^2.0"
     }
 }
