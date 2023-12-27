@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        {% block Head %}
+            <meta charset="UTF-8">
+            
+            {% block Script %}
+                <script src="{{ dView['basePath'] }}/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+            {% endblock %}
+            
+            {% block Style %}
+                <link rel="stylesheet" href="{{ dView['basePath'] }}/vendor/twbs/bootstrap/dist/css/bootstrap.min.css">
+            {% endblock %}
+            
+            <title>{% block Title %}{{ dView['title'] }}{% endblock %}</title>            
+        {% endblock %}
+    </head>
+    <body>
+        {% include dView['basePath'] ~ '/Templates/Common/Navbar.html' %}
+        
+        {% block Body %}
+        {% endblock %}
+        
+        
+        {% include dView['basePath'] ~ '/Templates/Common/Footer.html' %}
+    </body>
+</html>        
