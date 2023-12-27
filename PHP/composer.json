@@ -1,7 +1,9 @@
 {
     "require": {
         "twbs/bootstrap": "^5.3",
-        "twig/twig": "^2.0"
+        "twig/twig": "^2.0",
+        "ext-pdo": "*",
+        "altorouter/altorouter": "^2.0"
     },
     
     "autoload": {
