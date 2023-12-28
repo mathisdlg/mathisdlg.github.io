@@ -16,12 +16,16 @@
         {% endblock %}
     </head>
     <body>
-        {% include dView['basePath'] ~ '/Templates/Common/Navbar.html' %}
+        {% include 'Common/Header.html' %}
         
-        {% block Body %}
-        {% endblock %}
+        {% if dView['error'] is same as(true) %}
+            {% include 'Common/Error.html' %}
+        {% else %}
+            {% block Body %}
+            {% endblock %}
+        {% endif %}
         
         
-        {% include dView['basePath'] ~ '/Templates/Common/Footer.html' %}
+        {% include 'Common/Footer.html' %}
     </body>
 </html>        
