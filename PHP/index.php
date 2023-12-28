@@ -12,5 +12,6 @@ $twig   = new \Twig\Environment($loader, [
     'cache' => false,
     'debug' => true
 ]);
+$twig->addExtension(new \Twig\Extension\DebugExtension()); // Debug
 
 $ctrl = new \Controller\FrontController();
