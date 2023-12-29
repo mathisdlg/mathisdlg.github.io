@@ -18,6 +18,10 @@
     <body>
         {% include 'Common/Header.html' %}
         
+        <div class="position-relative my-2">
+            <h1 class="position-absolute top-0 start-50 translate-middle-x">{{ dView['title'] }}</h1>
+        </div>
+        
         {% if dView['error'] is same as(true) %}
             {% include 'Common/Error.html' %}
         {% else %}
