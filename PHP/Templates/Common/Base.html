@@ -22,18 +22,18 @@
             {% endblock %}
         </header>
         
-        <div class="position-relative my-2">
-            <h1 class="position-absolute top-0 start-50 translate-middle-x">{{ dView['title'] }}</h1>
-        </div>
-        
-        {% if dView['error'] is same as(true) %}
-            {% include 'Common/Error.html' %}
-        {% else %}
-            {% block Body %}
-            {% endblock %}
-        {% endif %}
+        {% block HeadTitle %}
+            <div class="position-relative my-2">
+                <h1 class="position-absolute top-0 start-50 translate-middle-x">{{ dView['title'] }}</h1>
+            </div>
+        {% endblock %}
         
         
-        {% include 'Common/Footer.html' %}
+        {% block Body %}
+        {% endblock %}
+        
+        <footer>
+            {% include 'Common/Footer.html' %}
+        </footer>
     </body>
 </html>        
