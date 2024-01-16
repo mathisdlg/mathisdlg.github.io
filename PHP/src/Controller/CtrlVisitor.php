@@ -20,5 +20,13 @@ namespace Controller{
             
             echo $twig->render('WebSite/Me/Hobbies.html', ['dView' => $dView]);
         }
+        
+        public function Me(array $dView){
+            global $twig;
+            
+            $dView['title'] = "Me";
+            
+            echo $twig->render('WebSite/Me/Me.html', ['dView' => $dView]);
+        }
     }
 }
