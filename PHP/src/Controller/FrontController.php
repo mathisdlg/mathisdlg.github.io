@@ -55,13 +55,14 @@ class FrontController{
         global $twig;
         
         $action = "Welcome";
-        if (Validation::isPage($dView['match']['params']['action'])){
-            if(isset($dView['match']['params']['action'])){
+        if (isset($dView['match']['params']['action'])){
+            if (Validation::isPage($dView['match']['params']['action'])){
                 $action = $dView['match']['params']['action'];
             }
-        }
-        else{
-            $this->error($dView, 400, "Bad Request", "The request could not be understood by the server due to malformed syntax.");
+            else{
+                $this->error($dView, 400, "Bad Request", "The request could not be understood by the server due to malformed syntax.");
+                return ;
+            }
         }
         
         $controller = "Controller\\" . $ctrl;
