@@ -13,7 +13,7 @@ class FrontController{
         $dView['title'] = $code . " " . $message;
         $dView['desc'] = $desc;
         
-        echo $twig->render("Common/Error.html", ['dView' => $dView]);
+        echo $twig->render("Common/Error.html.twig", ['dView' => $dView]);
     }
     
     public function __construct(){

@@ -10,7 +10,7 @@ namespace Controller{
             
             $dView['title'] = "Welcome";
             
-            echo $twig->render('WebSite/Welcome/Welcome.html', ['dView' => $dView]);
+            echo $twig->render('WebSite/Welcome/Welcome.html.twig', ['dView' => $dView]);
         }
         
         public function Hobbies(array $dView){
@@ -18,7 +18,7 @@ namespace Controller{
             
             $dView['title'] = "Hobbies";
             
-            echo $twig->render('WebSite/Me/Hobbies.html', ['dView' => $dView]);
+            echo $twig->render('WebSite/Me/Hobbies.html.twig', ['dView' => $dView]);
         }
         
         public function Me(array $dView){
@@ -26,7 +26,7 @@ namespace Controller{
             
             $dView['title'] = "Me";
             
-            echo $twig->render('WebSite/Me/Me.html', ['dView' => $dView]);
+            echo $twig->render('WebSite/Me/Me.html.twig', ['dView' => $dView]);
         }
     }
 }
