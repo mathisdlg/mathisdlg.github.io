@@ -1,3 +1,29 @@
+.titresg::after{
+    left : 10%;
+    right : -10%;
+    transition-duration: 0.7s;
+}
+.titresg:hover::after{
+    height: 50%;
+    left : 3%;
+    right : -3%;
+    bottom: 0%;
+    transition-duration: 0.3s;
+}
+
+.surl{
+    position:relative;
+    text-decoration: none;
+}
+.surl::after{
+    content:'';
+    height: 40%;
+    position: absolute;
+    bottom: -20%;
+    background : rgba(140, 0, 255, 0.493);
+}
+
+
 #footer_div{
     color: #ffffff;
 }
