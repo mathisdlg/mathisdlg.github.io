@@ -7,14 +7,12 @@
     
 
 {% block Body %}
-    <div class="modal">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                <div class="card bg-dark bg-gradient text-white" style="border-radius: 1rem;">
+    <div class="modal fade" id="Connection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body row d-flex justify-content-center align-items-center h-100 card bg-dark bg-gradient text-white" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
-
-                        <div class="mb-md-5 mt-md-4 pb-5">
-                            
+                        <div class="">
                             <table id="log_or_sign" class="mb-3">
                                 <tr>
                                     <td>
@@ -66,18 +64,14 @@
                                 <input type="password" id="typePasswordX" class="form-control form-control-lg" />
                             </div>
 
-                            <p class="small mb-5 pb-lg-2">
-                                <a class="text-white-50" href="#!">
-                                    Forgot password?
-                                </a>
-                            </p>
-
-                            <button class="btn btn-outline-light btn-lg px-5" type="submit">
-                                Submit
-                            </button>
-                            
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+
+                                <button class="btn btn-outline-light btn-lg" type="submit">
+                                    Submit
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -85,4 +79,8 @@
             </div>
         </div>
     </div>
+    
+    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Connection">
+        Launch demo modal
+    </button>
 {% endblock %}
