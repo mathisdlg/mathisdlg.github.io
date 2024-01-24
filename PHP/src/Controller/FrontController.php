@@ -60,7 +60,7 @@ class FrontController{
                 $action = $dView['match']['params']['action'];
             }
             else{
-                $this->error($dView, 400, "Bad Request", "The request could not be understood by the server due to malformed syntax.");
+                $this->error($dView, 404, "Not Found", "The requested URL was not found on this server.");
                 return ;
             }
         }
