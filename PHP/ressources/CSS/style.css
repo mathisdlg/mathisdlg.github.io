@@ -23,7 +23,11 @@
     background : rgba(140, 0, 255, 0.493);
 }
 
-
 #footer_div{
     color: #ffffff;
+}
+
+#log_or_sign{
+    display: flex;
+    justify-content: center;
 }
