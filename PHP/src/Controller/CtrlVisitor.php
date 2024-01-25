@@ -28,13 +28,5 @@ namespace Controller{
             
             echo $twig->render('WebSite/Me/Me.html.twig', ['dView' => $dView]);
         }
-        
-        public function Connection(array $dView){
-            global $twig;
-            
-            $dView['title'] = "Connection";
-            
-            echo $twig->render('WebSite/Connection/Connection.html.twig', ['dView' => $dView]);
-        }
     }
 }
